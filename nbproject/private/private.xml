@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/collections/TheArrayList.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/collections/TheLinkedList.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/generics/Main.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/collections/TheTreeSet.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/collections/note.txt</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/generics/BoundedClass.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/collections/TheTreeMap.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/generics/GenericMethods.java</file>
+            <file>file:/home/isaac/Desktop/java-projects/java-practice/src/generics/BoundedMethods.java</file>
+        </group>
     </open-files>
 </project-private>
