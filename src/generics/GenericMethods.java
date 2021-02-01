@@ -1,14 +1,24 @@
+/*
+    //generic method example
+
+    public <T> return_type methodName(T parameterName){
+        // code here
+    }
+ */
 package generics;
 
-import java.util.List;
+import java.util.Arrays;
 
 public class GenericMethods {
 
     // they can take in any type of list
-    public void display(List<?> items) {
-        for (var item : items) {
-            System.out.println("Hello, " + item);
-            System.out.println(item.getClass());
+    public static <T> void sortItems(T[] items) {
+        Arrays.sort(items); // sort the items
+
+        int count = 1;
+        for (T item : items) {
+            System.out.printf("%d. %s\n", count, item);
+            count++;
         }
     }
 }
