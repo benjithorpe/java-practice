@@ -1,6 +1,6 @@
 package generics;
 
-// can only take/accept a number
+// can only take/accept class that extends the Number Class
 public class BoundedClass<T extends Number> {
 
     private T value;

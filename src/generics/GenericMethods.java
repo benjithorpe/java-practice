@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package generics;
 
-/**
- *
- * @author isaac
- */
+import java.util.List;
+
 public class GenericMethods {
 
+    // they can take in any type of list
+    public void display(List<?> items) {
+        for (var item : items) {
+            System.out.println("Hello, " + item);
+            System.out.println(item.getClass());
+        }
+    }
 }

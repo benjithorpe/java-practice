@@ -2,34 +2,36 @@
 package collections;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class TheHashMap {
+
     public static void main(String[] args) {
         // initialization
-        HashMap<String, Integer> nameAndAge = new HashMap<>();
+        HashMap<String, Integer> person = new HashMap<>();
 
         // adding values to the hash map
-        nameAndAge.put("John", 12);
-        nameAndAge.put("Jane", 14);
-        nameAndAge.put("Joe", 16);
-        nameAndAge.put("Jenny", 18);
-        nameAndAge.put("Jack", 13);
+        person.put("John", 12);
+        person.put("Jane", 14);
+        person.put("Joe", 16);
+        person.put("Jenny", 18);
+        person.put("Jack", 13);
 
         // using System.out.println
-        System.out.println(nameAndAge);
+        System.out.println(person);
         System.out.println("=================\n");
 
-        // using for each loop
-        for(String name : nameAndAge.keySet()){
-            System.out.println("Name: " + name);
-            System.out.println("Age: " + nameAndAge.get(name));
+        // using for each loop and keySet()
+        for (String name : person.keySet()) {
+            System.out.printf("Name: %s, Age: %d\n", name, person.get(name));
         }
+
         System.out.println("===============\n");
 
-        // using Map.Entry
-        for(HashMap.Entry<String, Integer> entry : nameAndAge.entrySet()){
-            System.out.println("Name: " + entry.getKey());
-            System.out.println("Age: " + entry.getValue());
+        // using for each loop and Map.Entry (entrySet())
+        for (Map.Entry<String, Integer> entry : person.entrySet()) {
+            System.out.printf("Name: %s, Age: %d\n", entry.getKey(), entry.getValue());
         }
+
     }
 }
