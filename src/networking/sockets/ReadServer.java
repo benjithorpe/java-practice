@@ -1,17 +1,15 @@
-package sockets;
+package networking.sockets;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class WriteServer {
-
+public class ReadServer {
     public static void main(String[] args) {
-        WriteServer ws = new WriteServer();
-        ws.start();
-        ws.close();
+        ReadServer rs = new ReadServer();
+        rs.start();
+        rs.close();
     }
 
     ServerSocket server = null;
@@ -22,11 +20,9 @@ public class WriteServer {
 
             System.out.println("Waiting for connections...");
             try (Socket socket = server.accept();
-                    InputStreamReader reader = new InputStreamReader(socket.getInputStream());
-                    BufferedReader br = new BufferedReader(reader);) {
+                    PrintWriter writer = new PrintWriter(socket.getOutputStream());) {
 
-                System.out.println("I am from client");
-                System.out.println(br.readLine());
+                writer.write("I am from server");
             }
         } catch (IOException e) {
             System.out.println("Err " + e.getMessage());
