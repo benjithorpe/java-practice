@@ -1,3 +1,5 @@
+// for this program to work download:
+// javax.mail.jar and javax.activation.jar files
 package email;
 
 import java.util.Properties;
