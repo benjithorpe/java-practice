@@ -1,6 +1,6 @@
 package enumeration;
 
-enum NameAndAge {
+enum EnumWithConstructor {
     // setting default ages for fields
     JOHN(20),
     JANE(24),
@@ -13,7 +13,7 @@ enum NameAndAge {
     private int age;
 
     // constructor for the enum
-    NameAndAge(int age) {
+    EnumWithConstructor(int age) {
         this.age = age;
     }
 

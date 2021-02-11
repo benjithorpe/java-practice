@@ -8,12 +8,16 @@ public class Singleton {
         // exists only to stop instantiation
     }
 
-    // static instance method
+    /**
+     * Returns an instance of singleton.
+     *
+     * <p>
+     * If it is null, a new instance gets created. <br>
+     * Else the instance is returned
+     * </p>
+     */
     public static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
-        }
-        return instance;
+        return (instance == null) ? new Singleton() : instance;
     }
 
     // other instance protected by singleton-ness

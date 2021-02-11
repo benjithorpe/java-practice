@@ -1,7 +1,7 @@
 // The basic form of enums
 package enumeration;
 
-enum Games {
+enum EmptyEnum {
     PES_20,
     FIFA_20,
     PUBG_MOBILE,
