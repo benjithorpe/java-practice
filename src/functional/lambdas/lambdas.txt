@@ -1,0 +1,26 @@
+A lambda expression represents an anonymous method,
+a shorthand notation for implementing a functional interface,
+similar to anonymous class.
+
+The type of lambda expression is the type of functional interface that the lambda expression implements.
+Lambda expressions can be used anywhere functional interfaces are expected.
+
+Lambda Syntax
+
+A lambda consists of a parameter list followed by the arrow token and a body:
+    (parameterList) -> {statements}
+
+The following lambda receives two ints and return their sum
+    (int x, int y) -> {return x + y;}
+
+When a body contains only one expression, the return keyword and curly braces may be omitted:
+    (int x, int y) -> x + y;
+
+When a parameter list contains only one parameter, the parentheses may be omitted:
+    datatype value -> System.out.println(value);
+
+To define a lambda with an empty parameter list, specify the parameter list as empty parentheses to the left of the arrow token(->):
+    () -> System.out.println("Welcome to Lambdas");
+
+There are also specialized shorthand forms of lambdas that are known as method references.
+

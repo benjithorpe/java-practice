@@ -1,7 +1,7 @@
 /*  for this program to work, download:
     javax.mail.jar and javax.activation.jar files.
 
-    If you intend to use your personal email,
+    If you intend to use your personal email, for testing
     please enable Less Secure Apps in your Gmail account,
     and turn off 2 Steps Verification
  */

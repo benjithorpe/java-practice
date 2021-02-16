@@ -1,0 +1,34 @@
+Streams are similar to iterators.
+Streams are objects of classes that implement interface Stream(java.util.stream)
+or one of the specialized stream interfaces for processing collections of int, long, or double values.
+
+Together with lambdas, streams enable you to perform tasks on collections of elements -
+(often from and array or collection objects).
+
+Stream Pipelines
+Streams move elements through a sequence of processing steps - (known as stream pipelines) -
+that begins with a data source (such as array or collection), then performs various intermediate operations
+on the data source's elements and ends with a terminal operation.
+
+A stream pipeline is formed by chaining method calls.
+Unlike collections, streams do not have their own storage - once a stream is processed, it cannot be reused,
+because it does not maintain the copy of the original data source.
+
+========================================================================================
+Intermediate Stream operations
+
+* filter - Results in a stream containing only the elements that satisfy a condition.
+
+* distinct - Results in a stream containing only the unique elements.
+
+* limit - Results in a stream with the specified number of elements from the beginning of the original stream.
+
+
+* map - Results in a stream in which each element of the original stream is mapped to
+        a new value (possibly of a different type)—e.g., mapping numeric values to
+        the squares of the numeric values.
+        The new stream has the same number of elements as the original stream.
+
+* sorted - Results in a stream in which the elements are in sorted order.
+           The new stream has the same number of elements as the original stream.
+
