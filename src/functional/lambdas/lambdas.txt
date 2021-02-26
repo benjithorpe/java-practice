@@ -1,11 +1,15 @@
-A lambda expression represents an anonymous method,
-a shorthand notation for implementing a functional interface,
-similar to anonymous class.
+A lambda expression represents an anonymous method, a shorthand notation for implementing a functional interface,
+similar to anonymous class. A functional Interface can have one or more default methods.
+Default methods are not abstract. Neither are static and private interface methods.
+
+An Interface method is abstract only if  it does not specify an implementation.
+This means that a Functional Interface can include default, static or private methods,
+but in all cases it must have ONE and only ONE abstract method.
 
 The type of lambda expression is the type of functional interface that the lambda expression implements.
 Lambda expressions can be used anywhere functional interfaces are expected.
 
-Lambda Syntax
+Lambda Syntax:
 
 A lambda consists of a parameter list followed by the arrow token and a body:
     (parameterList) -> {statements}

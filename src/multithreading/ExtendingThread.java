@@ -5,7 +5,7 @@ public class ExtendingThread extends Thread {
     static void countup(int start, int stop) {
         for (int i = start; i <= stop; i++) {
             try{
-                sleep(1000);
+                sleep(1000); // sleep for 1 second
             }catch(InterruptedException e){
             }
 

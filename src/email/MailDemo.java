@@ -27,13 +27,15 @@ public class MailDemo {
 
         // setting up the mail server
         Properties properties = new Properties();
+
+        /* Add the lines below for extra seccurity */
         // properties.put("mail.smtp.socketFactory.port", "465"); // optional
         // properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory"); // optional
 
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.starttls.enable", "true"); // recommended for security
         properties.put("mail.smtp.auth", "true");
-        // default port is 465, use port 587 when starting TLS
+        // default port is 465, use port 587 (recomended) when starting TLS
         properties.put("mail.smtp.port", "587"); // optional
 
         // Authenticating the user and password

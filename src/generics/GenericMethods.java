@@ -21,4 +21,8 @@ public class GenericMethods {
             count++;
         }
     }
+
+    public static <T> void printValue(T value){
+        System.out.println("Value: " + value);
+    }
 }
