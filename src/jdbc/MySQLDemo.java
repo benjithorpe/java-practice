@@ -27,6 +27,8 @@ public class MySQLDemo {
             System.out.println("Success: " + rs);
             connection.close();
         } catch (SQLException e) {
+            e.printStackTrace();
+//            System.out.println("Error:? " + e.getMessage());
             // do nothing
         } finally {
             if (connection != null) {
