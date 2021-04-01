@@ -1,0 +1,10 @@
+Apr 01, 2021 6:47:59 PM logs.LoggingDemo main
+INFO: null
+java.lang.StackOverflowError
+	at logs.LoggingDemo.main(LoggingDemo.java:17)
+
+Apr 01, 2021 6:49:40 PM logs.LoggingDemo main
+INFO: null
+java.lang.StackOverflowError
+	at logs.LoggingDemo.main(LoggingDemo.java:17)
+
